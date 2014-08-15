@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" ng-app="4elian">
+  <head>
+    <meta charset="utf-8">
+    <title>εℓιαη</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <div class="container" ng-controller="MainCtrl">
+    
+      <nav class="navbar navbar-static-top navbar-inverse">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">E L I A N</a>
+        </div>
+    
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+          <ul class="nav navbar-nav">
+            <li class="active"><a ng-href="#">Home</a></li>
+            <li><a ng-href="#">About</a></li>
+            <li><a ng-href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <div class="row">
+        <center>
+         <textarea class='col-sm-5 col-md-5 untranslated' type='text' ng-model='translate' placeholder='Type or paste here'>
+         </textarea>
+          <div class="col-sm-5 col-md-5 col-sm-offset-1 coll-md-offset-1 translated">
+                <p ng-bind="translate">
+                  
+                </p>
+          </div>
+        </center>
+      </div>
+      <div class="footer">
+        <p>2014 <a href="#">elian</a></p>
+      </div>
+    </div>
+
+    
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/4elian.js"></script>
+    <script src="scripts/main/main-ctrl.js"></script>
+    <!-- inject:partials -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+  </body>
+</html>
